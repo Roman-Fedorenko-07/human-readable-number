@@ -148,60 +148,35 @@ module.exports = function toReadable(n) {
         if (n.toString().length === 3) {
             let s = '';
             if (n.toString()[0] !== '0') {
-                s += `${nObj1[n.toString()[0]]} hundred `;
+                s += `${nObj1[n.toString()[0]]} hundred`;
             }
             if (n.toString()[1] === '1') {
                 s += ` ${nObj2a1[n.toString().substring(1)]}`;
             } else if (n.toString()[1] !== '0') {
                 if (n.toString()[1] === '2') {
-                    s += 'twenty';
+                    s += ' twenty';
                 }
                 if (n.toString()[1] === '3') {
-                    s += 'thirty';
+                    s += ' thirty';
                 }
                 if (n.toString()[1] === '4') {
-                    s += 'forty';
+                    s += ' forty';
                 }
                 if (n.toString()[1] === '5') {
-                    s += 'fifty';
+                    s += ' fifty';
                 }
                 if (n.toString()[1] === '6') {
-                    s += 'sixty';
+                    s += ' sixty';
                 }
                 if (n.toString()[1] === '7') {
-                    s += 'seventy';
+                    s += ' seventy';
                 }
                 if (n.toString()[1] === '8') {
-                    s += 'eighty';
+                    s += ' eighty';
                 }
                 if (n.toString()[1] === '9') {
-                    s += 'ninety';
+                    s += ' ninety';
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 if (n.toString()[2] !== '0') {
                     s += ` ${nObj1[n.toString()[2]]}`;
